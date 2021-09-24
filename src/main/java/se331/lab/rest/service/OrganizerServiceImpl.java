@@ -22,6 +22,11 @@ public class OrganizerServiceImpl implements OrganizerService{
     }
 
     @Override
+    public Organizer getOrganizer(Long id) {
+        return organizerDao.getOrganizer(id);
+    }
+
+    @Override
     @Transactional
     public Organizer save(Organizer organizer) {
         return organizerDao.save(organizer);

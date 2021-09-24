@@ -8,6 +8,7 @@ import java.util.List;
 
 public interface OrganizerService {
     List<Organizer> getAllOrganizer();
+    Organizer getOrganizer(Long id);
     Organizer save(Organizer organizer);
     Page<Organizer> getOrganizer(Integer page, Integer pageSize);
 }
